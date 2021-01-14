@@ -1,0 +1,19 @@
+{% load mytag %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>过滤器</title>
+</head>
+<body>
+    {#过滤器#}
+    <h1>{{ num }}</h1>
+    <h1>{{ num|add:10 }}</h1>
+    <h1>{{ 5|sub1}}</h1>
+    <h1>{{ age|default_if_none:"你好" }}</h1>
+    <h1>{{ age|default:"Hello" }}</h1>
+    <h1>{{ name }}</h1>
+    <h1>{{ t1|date:'Y-m-d H:i:s' }}</h1>
+
+</body>
+</html>
